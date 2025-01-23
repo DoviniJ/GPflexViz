@@ -1,0 +1,16 @@
+Compare1 Compare2 p_value
+"Model A" "Model B" 0.04
+"Model A" "Model C" 0.07
+"Model A" "Model D" 0.01
+"Model A" "Model E" 0.15
+"Model A" "Model F" 0.03
+"Model B" "Model C" 0.05
+"Model B" "Model D" 0.09
+"Model B" "Model E" 0.02
+"Model B" "Model F" 0.08
+"Model C" "Model D" 0.11
+"Model C" "Model E" 0.02
+"Model C" "Model F" 0.06
+"Model D" "Model E" 0.09
+"Model D" "Model F" 0.15
+"Model E" "Model F" 0.11

@@ -1,0 +1,7 @@
+Model R_squared p_value se
+"Model A" 0.95 0.0081 0.01
+"Model B" 0.89 0.06548 0.02
+"Model C" 0.78 0.03782 0.015
+"Model D" 0.65 0.00545 0.03
+"Model E" 0.29 0.09453 0.025
+"Model F" 0.78 0.0345 0.02

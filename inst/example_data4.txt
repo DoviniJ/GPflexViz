@@ -1,0 +1,7 @@
+Model R_squared
+"Model A" 0.95
+"Model B" 0.89
+"Model C" 0.78
+"Model D" 0.65
+"Model E" 0.29
+"Model F" 0.78
