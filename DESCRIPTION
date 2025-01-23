@@ -1,0 +1,25 @@
+Package: GPflexViz
+Title: Graphical Visualizations Related To Genomic Prediction
+Version: 1.0.0
+Authors@R: c(person("Dovini", "Jayasinghe", role = c("aut", "cre","cph"), email = "dovini.jayasinghe@mymail.unisa.edu.au"),
+             person("Hong", "Lee", role = c("aut","cph"),email = "Hong.Lee@unisa.edu.au"))
+Description: Provides flexible tools for the visualization of genomic data. Supports interactive and static plots tailored for presentations and publications, with customizable features like colors, themes, and annotations to align with specific analytical and presentation goals.
+URL: https://github.com/DoviniJ/GPflexViz
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Depends: 
+    R (>= 2.10)
+Imports:
+    cowplot,
+    dplyr,
+    ggforce,
+    ggplot2,
+    gridExtra,
+    nortest,
+    plotly,
+    reshape2,
+    stats,
+    utils
+LazyData: true
