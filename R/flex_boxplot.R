@@ -128,7 +128,7 @@ flex_boxplot <- function(
   colors <- if (!is.null(user_colors)) user_colors else default_colors[1:min(length(default_colors), ncol(distribution_data))]
   
   # Melt data to long format, explicitly specifying no id variables
-  data_long <- melt(distribution_data, id.vars = NULL) # Set id.vars to NULL explicitly
+  data_long <- reshape2::melt(distribution_data, id.vars = NULL) # Set id.vars to NULL explicitly
   colnames(data_long) <- c("Variable", "Value")
   
   # Create the boxplot
