@@ -5,7 +5,6 @@
 #'  correlation heatmaps of either the full, lower, or upper triangular matrix.
 #' 
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

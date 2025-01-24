@@ -46,7 +46,6 @@ utils::globalVariables(c("Variable", "Value", "lower", "upper", "ymin", "middle"
 #'   object and/or a ggplot object.
 #' 
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest
@@ -147,8 +146,8 @@ flex_boxplot <- function(
   if (annotate_stats || annotate_outliers) {
     interactive <- FALSE
     stats <- data_long %>%
-      group_by(Variable) %>%
-      summarise(
+      dplyr::group_by(Variable) %>%
+      dplyr::summarise(
         ymin = min(Value),
         lower = quantile(Value, 0.25),
         middle = median(Value),
@@ -168,8 +167,8 @@ flex_boxplot <- function(
     
     if (annotate_outliers) {
       outliers <- data_long %>%
-        left_join(stats, by = "Variable") %>%
-        filter(Value < lower_fence | Value > upper_fence)
+        dplyr::left_join(stats, by = "Variable") %>%
+        dplyr::filter(Value < lower_fence | Value > upper_fence)
       
       p <- p +
         geom_point(data = outliers, aes(x = Variable, y = Value), shape = 19, size = 3) +

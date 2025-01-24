@@ -27,7 +27,6 @@ utils::globalVariables(c("p_value", "x_var", "y_var", "estimate", "p_interval"))
 #' @return A ggplot or plotly object depending on the `interactive` argument.
 #' 
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest
@@ -35,7 +34,8 @@ utils::globalVariables(c("p_value", "x_var", "y_var", "estimate", "p_interval"))
 #' @import cowplot
 #' @import grid
 #' 
-#' @rawNamespace import(dplyr, except = c(combine, lag, filter))
+#' @rawNamespace import(dplyr, except = c(combine, lag))
+#' @rawNamespace import(stats, except = c(filter))
 #' @rawNamespace import(ggplot2, except = last_plot)
 #' @rawNamespace import(plotly, except = filter)
 #' 

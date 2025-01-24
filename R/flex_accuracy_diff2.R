@@ -67,7 +67,6 @@ utils::globalVariables(c("trait", "R2diff", "lower_limit_R2", "upper_limit_R2", 
 #' @return Either a ggplot or plotly object depending on the `interactive` 
 #' argument.
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

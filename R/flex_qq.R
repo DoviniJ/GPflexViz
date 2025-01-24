@@ -44,7 +44,6 @@ utils::globalVariables(c("P_VALUE", "Expected", "Observed", "SNP", "CHR", "POS",
 #'flex_qqplot(example_data1, annotate_data = annotated_snps, annotate_labels = TRUE, 
 #'zoom_on_annotations = TRUE, zoom_margin = 0.3, user_plot_theme = theme_bw())
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

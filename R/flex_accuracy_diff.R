@@ -44,7 +44,6 @@ utils::globalVariables(c("Compare1", "Compare2", "Model", "R_squared", "ypos", "
 #' Plotly plot.
 #'
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

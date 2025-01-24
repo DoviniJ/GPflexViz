@@ -39,7 +39,6 @@ utils::globalVariables(c("Model", "R_squared", "p_value", "lower", "upper"))
 #' @return A ggplot object if 'interactive' is FALSE; otherwise, an interactive 
 #' Plotly plot.
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

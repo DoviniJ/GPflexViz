@@ -108,7 +108,6 @@ utils::globalVariables(c("POS", "P_VALUE", "CHR", "SNP", "xmin", "xmax", "ymin",
 #' @importFrom ggplot2 aes geom_point geom_text geom_hline geom_rect scale_colour_manual 
 #' labs theme theme_minimal theme_dark element_text element_rect
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

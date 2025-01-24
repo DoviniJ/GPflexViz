@@ -28,7 +28,6 @@ utils::globalVariables(c("distance", "R2", "CHR_A", "SNP_A", "CHR_B", "SNP_B"))
 #' @return A ggplot object (static plot) or a plotly object (interactive plot), 
 #' depending on the value of `interactive`.
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest

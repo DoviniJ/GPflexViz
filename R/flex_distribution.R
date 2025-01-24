@@ -82,7 +82,6 @@ utils::globalVariables(c("value", "..count..", "distribution", "..density..", "M
 #' )
 #'
 #' @import reshape2 
-#' @import stats 
 #' @import utils
 #' @import gridExtra
 #' @import nortest
