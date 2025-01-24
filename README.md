@@ -25,3 +25,6 @@ library(GPflexViz)
 
 **Please download "User Manual.pdf" for complete instructions and the tutorial.**
 
+## Contact
+dovini.jayasinghe@mymail.unisa.edu.au
+
