@@ -87,11 +87,6 @@ library(grid)
 library(cowplot)
 flex_manhattan(example_data1)
 
-# Using a custom color palette for chromosomes
-flex_manhattan(example_data1, user_colors = rep(c("dodgerblue2", "gold1"), 
-length.out = max(unique(example_data1$CHR))))
-
-
 # Changing the y-axis cutoff to highlight significant p-values differently
 flex_manhattan(example_data1, 
                user_y_cutoff = c(5, 4),  # Multiple cutoffs
@@ -102,10 +97,6 @@ annotated_snps <- c("SNP_2550", "SNP_4829", "SNP_8296")
 flex_manhattan(example_data1, annotate_data = annotated_snps, annotate_labels = TRUE, 
 interactive = FALSE)
 
-# Example of removing the legend entirely
-flex_manhattan(example_data1, 
-               user_legend_title = NULL, 
-               user_plot_theme_specs = theme(legend.position = "none"))
 
 # Example of placing the legend at the bottom with a black outline
 flex_manhattan(example_data1, 
