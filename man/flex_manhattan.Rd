@@ -87,27 +87,10 @@ library(grid)
 library(cowplot)
 flex_manhattan(example_data1)
 
-# Creating a non-interactive plot (using ggplot2 only)
-flex_manhattan(example_data1, interactive = FALSE)
-
 # Using a custom color palette for chromosomes
 flex_manhattan(example_data1, user_colors = rep(c("dodgerblue2", "gold1"), 
 length.out = max(unique(example_data1$CHR))))
 
-# Adjusting plot themes
-flex_manhattan(example_data1, user_plot_theme = theme_dark())
-
-# Modifying legend and title sizes and positions using custom theme specifications
-flex_manhattan(example_data1, 
-               user_plot_theme_specs = theme(
-                 legend.title = element_text(size = 10),
-                 legend.text = element_text(size = 8),
-                 title = element_text(size = 20),
-                 axis.text.x = element_text(size = 12),
-                 axis.title.x = element_blank(),
-                 axis.text.y = element_text(size = 12),
-                 axis.title.y = element_text(size = 15)
-               ))
 
 # Changing the y-axis cutoff to highlight significant p-values differently
 flex_manhattan(example_data1, 
@@ -118,24 +101,6 @@ flex_manhattan(example_data1,
 annotated_snps <- c("SNP_2550", "SNP_4829", "SNP_8296")
 flex_manhattan(example_data1, annotate_data = annotated_snps, annotate_labels = TRUE, 
 interactive = FALSE)
-
-# Filtering data to display only a specific chromosome
-flex_manhattan(subset(example_data1, CHR == 3))
-
-# Title, axis labels, and legend customization
-flex_manhattan(example_data1,
-               user_legend_title = "Chromosome",
-               user_title = "Manhattan Plot for GWAS Results",
-               user_x_title = "Genomic Position (bp)",
-               user_y_title = "-log10(p-value)",
-               user_plot_theme_specs = theme(
-                 legend.text = element_text(size = 20),
-                 plot.title = element_text(
-                   hjust = 0.5,
-                   vjust = 1,
-                   size = 14,
-                   face = "bold"
-                 )))
 
 # Example of removing the legend entirely
 flex_manhattan(example_data1, 
