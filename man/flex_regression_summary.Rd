@@ -36,7 +36,7 @@ flex_regression_summary(
   user_labs = labs(x = "x variable", y = "y variable", fill = "Estimate", size =
     "p value"),
   user_tooltip = list("Estimate: ", "p-value: "),
-  user_size_legend_guides = guides(size = guide_legend(reverse = F, label.position =
+  user_size_legend_guides = guides(size = guide_legend(reverse = FALSE, label.position =
     "right", title.position = "top", override.aes = list(colour = "grey", shape = 15,
     fill = "white", size = user_legend_break_sizes - 3)))
 )
