@@ -7,8 +7,9 @@ Version: 1.0.0
 Authors: Dovini Jayasinghe and S. Hong Lee
 
 ---
+## Package installation:
 
-## GitHub installation
+### GitHub
 
 Install devtools:
 ```
@@ -18,7 +19,16 @@ Install GPflexViz:
 ```
 devtools::install_github("DoviniJ/GPflexViz")
 ```
-Call the library GPflexViz:
+
+### or
+
+### CRAN 
+
+```
+install.packages("GPflexViz")
+```
+
+## Call the library GPflexViz:
 ```
 library(GPflexViz)
 ```
